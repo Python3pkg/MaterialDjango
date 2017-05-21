@@ -13,7 +13,7 @@ class PaperLoginForm(AuthenticationForm):
 
 def mangle_form(form):
     "Utility to monkeypatch forms into paperinputs, untested"
-    for field, widget in form.fields.iteritems():
+    for field, widget in form.fields.items():
         if type(widget) is forms.widgets.TextInput:
             form.fields[field].widget = PaperTextInput()
             form.fields[field].label = ''

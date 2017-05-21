@@ -1,5 +1,5 @@
 from django.test import TestCase
-from forms import PaperLoginForm
+from .forms import PaperLoginForm
 from materialdjango.widgets import PaperPasswordInput, PaperTextInput
 
 try:

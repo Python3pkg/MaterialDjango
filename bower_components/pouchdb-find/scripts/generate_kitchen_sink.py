@@ -49,4 +49,4 @@ for i in range(100):
     config['sort'] = sort
   configs.append(config);
   
-print json.dumps(configs)
+print(json.dumps(configs))
